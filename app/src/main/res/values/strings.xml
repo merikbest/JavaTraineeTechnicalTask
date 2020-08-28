@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Java Trainee Technical task</string>
+    <string name="bind_service">Bind Service</string>
+    <string name="unbind_service">Unbind Service</string>
+    <string name="remote_call_failed">Failure calling remote service</string>
+    <string name="remote_service_connected">Connected to remote service</string>
+    <string name="remote_service_disconnected">Disconnected from remote service</string>
+</resources>
