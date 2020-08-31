@@ -51,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
 
             try {
                 aidlService.registerCallback(mCallback);
-                mCallback.onValueChanged(1);
             } catch (RemoteException e) {
 
             }
@@ -97,8 +96,7 @@ public class MainActivity extends AppCompatActivity {
     private IAidlServiceCallback.Stub mCallback = new IAidlServiceCallback.Stub() {
         @Override
         public void onValueChanged(int value) throws RemoteException {
-//            handler.sendMessage(handler.obtainMessage(BUMP_MSG, value, 0));
-            handler.sendMessageDelayed(handler.obtainMessage(BUMP_MSG, value, 0), 5000);
+            handler.sendMessage(handler.obtainMessage(BUMP_MSG, value, 0));
         }
     };
 
